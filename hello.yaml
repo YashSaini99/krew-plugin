@@ -9,7 +9,7 @@ spec:
       matchLabels:
         os: linux
         arch: amd64
-    uri: file:////home/yash/Downloads/test/plugin-linux-amd64.tar.gz
+    uri: https://github.com/YashSaini99/krew-plugin/blob/8303c92d00867e9d1c8eea0df9ca1176c83f58c3/plugin-linux-amd64.tar.gz
     sha256: 39ffa88f29f785cceff885e43fcf7d4d912aff8da7a766a24c72a9485924ff9d
     files:
     - from: "./hello-plugin"
