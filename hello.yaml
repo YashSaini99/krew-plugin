@@ -1,0 +1,19 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: hello
+spec:
+  version: "v0.0.1"
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: file:////home/yash/Downloads/test/plugin-linux-amd64.tar.gz
+    sha256: 39ffa88f29f785cceff885e43fcf7d4d912aff8da7a766a24c72a9485924ff9d
+    files:
+    - from: "./hello-plugin"
+      to: "."
+    bin: "hello-plugin"
+  shortDescription: "A simple hello world plugin"
+  description: "This plugin prints 'Hello, World!'"
